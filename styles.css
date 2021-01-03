@@ -153,6 +153,10 @@ main{
     margin: 0 auto;
 }
 
+.table-primary{
+    margin-bottom: 20px;
+}
+
 .table--title{
     padding: 12px;
     font-size: 1.8rem;
@@ -162,6 +166,10 @@ main{
 
 .table--title__orange{
     color: var(--bitcoin-orange);
+}
+
+.table--title__blue{
+    color: var(--secondary-blue);
 }
 
 .table--content{
@@ -177,6 +185,10 @@ main{
     font-family: 'Inter';
     text-align: left;
     border-bottom: 0.5px solid var(--off-white);
+}
+
+tr:last-of-type .table--data{
+    border-bottom: none;
 }
 
 .table--data__left{
@@ -214,5 +226,12 @@ main{
     font-family: 'Inter';
     font-size: 12px;
     font-weight: 400;
+}
+
+.table--date__bg-orange{
     background-color: var(--soft-orange);
+}
+
+.table--date__bg-blue{
+    background-color: var(--soft-blue);
 }
