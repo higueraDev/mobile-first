@@ -100,3 +100,119 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+/* MAIN */
+main{
+    background-color: var(--off-white);
+}
+
+.exchange-container{
+    padding-top: 59px;
+    padding-bottom: 64px;
+    text-align: center;
+}
+
+.exchange-container--title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.background-img{
+    width: 195px;
+    height: 195px;
+    margin: 0 auto 40px;
+    background-image: url(./assets/imgs/bitcoin.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.exchange-container--title h2{
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    color: var(--warm-black);
+}
+
+.exchange-container--title p{
+    margin-bottom: 48px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+.table{
+    width:70%;
+    min-width: 197px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.table--title{
+    padding: 12px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.table--title__orange{
+    color: var(--bitcoin-orange);
+}
+
+.table--content{
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+.table--data{
+    width: 50%;
+    padding: 10px 12px;
+    font-family: 'Inter';
+    text-align: left;
+    border-bottom: 0.5px solid var(--off-white);
+}
+
+.table--data__left{
+    font-size: 1.6rem;
+    color: var(--grey);
+    border-right: 0.5px solid var(--off-white);
+}
+
+.table--data__right{
+    font-size: 1.4rem;
+    color: #757575;
+    text-align: center;
+}
+
+.trending{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 10.5px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.trending__down{
+    background-image: url(./assets/icons/trending-down.svg);
+}
+
+.trending__up{
+    background-image: url(./assets/icons/trending-up.svg);
+}
+
+.table--date{
+    padding: 8px;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    background-color: var(--soft-orange);
+}
