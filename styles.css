@@ -256,7 +256,7 @@ tr:last-of-type .table--data{
     background-color: var(--warm-black);
 }
 
-.product-container__title h2{
+.product-container--title h2{
     margin-bottom: 24px;
     font-size: 2.4rem;
     font-weight: 700;
@@ -265,7 +265,7 @@ tr:last-of-type .table--data{
     color: var(--white);
 }
 
-.product-container__title p{
+.product-container--title p{
     margin-bottom: 32px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -308,14 +308,14 @@ tr:last-of-type .table--data{
     background-image: url('./assets/icons/check-circle.svg');
 }
 
-.product-card__title{
+.product-card--title{
     margin-bottom: 10px;
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--white);
 }
 
-.product-card__content{
+.product-card--content{
     font-size: 1.4rem;
     line-height: 1.8rem;
     font-weight: 500;
