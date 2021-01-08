@@ -6,7 +6,7 @@
 5.-Otros
  */
 
-:root{
+:root {
     /* Colores */
     --bitcoin-orange: #F7931A;
     --soft-orange: #FFE9D5;
@@ -20,7 +20,7 @@
 
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -29,9 +29,10 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
-header{
+header {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -43,36 +44,63 @@ header{
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
 
-header img{
+header img {
     width: 150px;
     height: 24px;
     margin-top: 42px;
 }
 
-.header--title-container{
+.container{
     width: 90%;
     min-width: 288px;
     max-width: 900px;
+    margin: 0 auto;
+}
+
+.header--title-container {
     height: 218px;
     margin-top: 36px;
 }
 
-h1{
+.section-title {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 2.6rem;
-    color: var(--white);
+    text-align: center;
 }
 
-.header--title-container p{
-    margin-top: 24px;
+.section-content{
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
+    text-align: center;
+}
+
+.section__white{
+    color: var(--white);
+}
+
+.section__soft-orange{
     color: var(--soft-orange);
 }
 
-.header--button{
+.section__warm-black{
+    color: var(--warm-black);
+}
+
+.section__dark-gray{
+    color: #757575;
+}
+
+.section__soft-gray{
+    color: #808080;
+}
+
+.header--title-container p {
+    margin-top: 24px;
+}
+
+.header--button {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -91,7 +119,7 @@ h1{
     text-decoration: none;
 }
 
-.header--button span{
+.header--button span {
     display: inline-block;
     width: 1.2rem;
     height: 0.8rem;
@@ -103,24 +131,17 @@ h1{
 
 
 /* MAIN */
-main{
+main {
     background-color: var(--off-white);
 }
 
-.exchange-container{
+.exchange-container {
     padding-top: 59px;
     padding-bottom: 64px;
     text-align: center;
 }
 
-.exchange-container--title{
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.background-img{
+.background-img {
     width: 195px;
     height: 195px;
     margin: 0 auto 40px;
@@ -130,56 +151,48 @@ main{
     background-repeat: no-repeat;
 }
 
-.exchange-container--title h2{
+.exchange-container--title h2 {
     margin-bottom: 24px;
-    font-size: 2.4rem;
-    line-height: 2.6rem;
-    font-weight: 700;
-    color: var(--warm-black);
 }
 
-.exchange-container--title p{
+.exchange-container--title p {
     margin-bottom: 48px;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    font-weight: 500;
-    color: #757575;
 }
 
-.table{
-    width:70%;
+.table {
+    width: 70%;
     min-width: 197px;
     max-width: 500px;
     margin: 0 auto;
 }
 
-.table-primary{
+.table-primary {
     margin-bottom: 20px;
 }
 
-.table--title{
+.table--title {
     padding: 12px;
     font-size: 1.8rem;
     font-weight: 700;
     text-align: left;
 }
 
-.table--title__orange{
+.table--title__orange {
     color: var(--bitcoin-orange);
 }
 
-.table--title__blue{
+.table--title__blue {
     color: var(--secondary-blue);
 }
 
-.table--content{
+.table--content {
     width: 100%;
     margin-bottom: 16px;
     background-color: var(--white);
     border-radius: 8px;
 }
 
-.table--data{
+.table--data {
     width: 50%;
     padding: 10px 12px;
     font-family: 'Inter';
@@ -187,23 +200,23 @@ main{
     border-bottom: 0.5px solid var(--off-white);
 }
 
-tr:last-of-type .table--data{
+tr:last-of-type .table--data {
     border-bottom: none;
 }
 
-.table--data__left{
+.table--data__left {
     font-size: 1.6rem;
     color: var(--grey);
     border-right: 0.5px solid var(--off-white);
 }
 
-.table--data__right{
+.table--data__right {
     font-size: 1.4rem;
     color: #757575;
     text-align: center;
 }
 
-.trending{
+.trending {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -213,34 +226,34 @@ tr:last-of-type .table--data{
     background-repeat: no-repeat;
 }
 
-.trending__down{
+.trending__down {
     background-image: url(./assets/icons/trending-down.svg);
 }
 
-.trending__up{
+.trending__up {
     background-image: url(./assets/icons/trending-up.svg);
 }
 
-.table--date{
+.table--date {
     padding: 8px;
     font-family: 'Inter';
     font-size: 12px;
     font-weight: 400;
 }
 
-.table--date__bg-orange{
+.table--date__bg-orange {
     background-color: var(--soft-orange);
 }
 
-.table--date__bg-blue{
+.table--date__bg-blue {
     background-color: var(--soft-blue);
 }
 
-.lay-icon{
+.lay-icon {
     position: absolute;
     right: 50%;
     top: 0;
-    transform: translate(50%,-50%);
+    transform: translate(50%, -50%);
     display: block;
     width: 37.45px;
     height: 24px;
@@ -250,42 +263,30 @@ tr:last-of-type .table--data{
     background-image: url('./assets/imgs/lay.svg');
 }
 
-.product-container{
+.product-container {
     position: relative;
     padding: 64px 0 47px;
     background-color: var(--warm-black);
 }
 
-.product-container--title h2{
+.product-container--title h2 {
     margin-bottom: 24px;
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 2.6rem;
-    text-align: center;
-    color: var(--white);
 }
 
-.product-container--title p{
+.product-container--title p {
     margin-bottom: 32px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    text-align: center;
-    color: #808080;
 }
 
-.product-card{
-    width: 90%;
-    min-width: 288px;
+.product-card {
     max-width: 400px;
-    margin: 0 auto 16px;
+    margin-bottom: 16px;
     padding: 16px;
     background-color: var(--black);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
     border-radius: 4px;
 }
 
-.product-icon{
+.product-icon {
     display: block;
     width: 20px;
     height: 20px;
@@ -295,29 +296,147 @@ tr:last-of-type .table--data{
     background-repeat: no-repeat;
 }
 
-.clock-icon{
+.clock-icon {
     background-image: url('./assets/icons/clock.svg');
 }
-.eye-icon{
+
+.eye-icon {
     background-image: url('./assets/icons/eye.svg');
 }
-.dollar-icon{
+
+.dollar-icon {
     background-image: url('./assets/icons/dollar-sign.svg');
 }
-.check-icon{
+
+.check-icon {
     background-image: url('./assets/icons/check-circle.svg');
 }
 
-.product-card--title{
+.arrow-icon {
+    background-image: url('./assets/icons/arrow-right.svg');
+}
+
+.product-card--title {
     margin-bottom: 10px;
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--white);
 }
 
-.product-card--content{
+.product-card--content {
     font-size: 1.4rem;
     line-height: 1.8rem;
     font-weight: 500;
-    color: #808080;
+}
+
+.banner-container {
+    padding-top: 64px;
+    padding-bottom: 297px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./assets/imgs/bitcoinbaby.jpg');
+}
+
+.plans-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0;
+    background-color: var(--off-white);
+    text-align: center;
+}
+
+.plans-container--title h2{
+    margin-bottom: 24px;
+}
+
+.plans-container--title p{
+    margin-bottom: 34px;
+}
+
+.plans-slider{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    padding: 30px 0;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plan-card{
+    scroll-snap-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 190px;
+    margin: 0 8px;
+    padding: 31px 16px 24px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+}
+
+.plan-card--head{
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transform: translate(50%,-50%);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--bitcoin-orange);
+    color: var(--white);
+}
+
+.plan-card--title{
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.plan-card--price{
+    display: flex;
+    align-items: flex-start;
+    font-family: inter;
+    margin-bottom: 16px;
+    font-size: 5.2rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.plan-card--price span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #363636;
+}
+
+.plan-card--content{
+    margin-bottom: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #757575;
+}
+
+.plan-card--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 151px;
+    line-height: 48px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--warm-black);
+    text-decoration: none;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    background-color: var(--off-white);
+}
+
+.plan-card--link .product-icon {
+    display: inline-block;
+    margin: 0 0 0 8px;
 }

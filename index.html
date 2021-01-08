@@ -15,21 +15,21 @@
 <body>
     <header>
         <img src="./assets/imgs/logo.svg" alt="Logo">
-        <div class="header--title-container">
-            <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
-            <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a href="" class="header--button">Conoce Nuestros Planes <span></span></a>
+        <div class="container header--title-container">
+            <h1 class="section-title section__white">La próxima revolución en el intercambio de criptomonedas.</h1>
+            <p class="section-content section__soft-orange">Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
+            <a href="#plans" class="header--button">Conoce Nuestros Planes <span></span></a>
         </div>
     </header>
     <main>
-        <section class="exchange-container">
+        <section class="container exchange-container">
             <div class="background-img">
             </div>
             <div class="exchange-container--title">
-                <h2>
+                <h2 class="section-title section__warm-black">
                     Visibilizamos todas las tasas de cambio.
                 </h2>
-                <p>
+                <p class="section-content section__dark-gray">
                     Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.
                 </p>
             </div>
@@ -40,19 +40,23 @@
                         <p class="table--title table--title__orange">Monedas</p>
                         <tr>
                             <td class="table--data table--data__left">Bitcoin</td>
-                            <td class="table--data table--data__right">$ 1.96 <span class="trending trending__down"></span></td>
+                            <td class="table--data table--data__right">$ 1.96 <span
+                                    class="trending trending__down"></span></td>
                         </tr>
                         <tr>
                             <td class="table--data table--data__left">Ethereum</td>
-                            <td class="table--data table--data__right">$ 0.07<span class="trending trending__up"></span></td>
+                            <td class="table--data table--data__right">$ 0.07<span class="trending trending__up"></span>
+                            </td>
                         </tr>
                         <tr>
                             <td class="table--data table--data__left">Ripple</td>
-                            <td class="table--data table--data__right">$ 2.15<span class="trending trending__down"></span></td>
+                            <td class="table--data table--data__right">$ 2.15<span
+                                    class="trending trending__down"></span></td>
                         </tr>
                         <tr>
                             <td class="table--data table--data__left">Stellar</td>
-                            <td class="table--data table--data__right">$ 4.96<span class="trending trending__down"></span></td>
+                            <td class="table--data table--data__right">$ 4.96<span
+                                    class="trending trending__down"></span></td>
                         </tr>
                     </table>
                     <div class="table--date table--date__bg-orange">
@@ -88,37 +92,84 @@
         <section class="product-container">
             <span class="lay-icon"></span>
             <div class="product-container--title">
-                <h2>
+                <h2 class="section-title section__white">
                     Creamos un producto sin comparación.
                 </h2>
-                <p>
+                <p class="section-content section__soft-gray">
                     Confiable y diseñado para su uso diario.
                 </p>
             </div>
-            <article class="product-card">
+            <article class="container product-card">
                 <span class="product-icon clock-icon"></span>
-                <h3 class="product-card--title">Tiempo real</h3>
-                <p class="product-card--content">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+                <h3 class="product-card--title section__white">Tiempo real</h3>
+                <p class="product-card--content section__soft-gray">Nuestro API toma información minuto a minuto sobre las tasas que más
+                    determinan el comportamiento.</p>
             </article>
-            <article class="product-card">
+            <article class="container product-card">
                 <span class="product-icon eye-icon"></span>
-                <h3 class="product-card--title">No hay tasas escondidas</h3>
-                <p class="product-card--content">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
+                <h3 class="product-card--title section__white">No hay tasas escondidas</h3>
+                <p class="product-card--content section__soft-gray">Ni en la compra o al momento de exit, Batabit siempre te muestra el
+                    costo real de lo que estás adquiriendo.</p>
             </article>
-            <article class="product-card">
+            <article class="container product-card">
                 <span class="product-icon dollar-icon"></span>
-                <h3 class="product-card--title">Compara monedas</h3>
-                <p class="product-card--content">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
+                <h3 class="product-card--title section__white">Compara monedas</h3>
+                <p class="product-card--content section__soft-gray">No más rumores, con Babtabit sabrás el valor real de cada moneda en el
+                    mercado actual.</p>
             </article>
-            <article class="product-card">
+            <article class="container product-card">
                 <span class="product-icon check-icon"></span>
-                <h3 class="product-card--title">Información confiable</h3>
-                <p class="product-card--content">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+                <h3 class="product-card--title section__white">Información confiable</h3>
+                <p class="product-card--content section__soft-gray">Nuestras fuentes están 100% verificadas y continuamos auditando su
+                    contenido mientras se actualizan.</p>
             </article>
 
         </section>
-        <section></section>
-        <section></section>
+        <section class="banner-container">
+            <h2 class="section-title section__white">Conócelo hoy.</h2>
+        </section>
+        <section id="plans" class="container plans-container">
+            <div class="plans-container--title">
+                <h2 class="section-title section__warm-black">Escoge el plan que mejor se ajuste a ti.</h2>
+                <p class="section-content section__dark-gray">Cualquier plan te da acceso completo a nuestra plataforma.</p>
+            </div>
+            <div class="plans-slider">
+                <article class="plan-card">
+                    <span class="plan-card--head">Recomendado</span>
+                    <p class="plan-card--title">Pago Anual</p>
+                    <p class="plan-card--price">
+                        <span>$</span>
+                        99
+                    </p>
+                    <p class="plan-card--content">
+                        *Ahorras $129 comparado al plan mensual.
+                    </p>
+                    <a class="plan-card--link" href="#">Escoger este <span class="product-icon arrow-icon"></span></a>
+                </article>
+                <article class="plan-card">
+                    <p class="plan-card--title">Pago Anual</p>
+                    <p class="plan-card--price">
+                        <span>$</span>
+                        99
+                    </p>
+                    <p class="plan-card--content">
+                        *Ahorras $129 comparado al plan mensual.
+                    </p>
+                    <a class="plan-card--link" href="#">Escoger este <span class="product-icon arrow-icon"></span></a>
+                </article>
+                <article class="plan-card">
+                    <p class="plan-card--title">Pago Anual</p>
+                    <p class="plan-card--price">
+                        <span>$</span>
+                        99
+                    </p>
+                    <p class="plan-card--content">
+                        *Ahorras $129 comparado al plan mensual.
+                    </p>
+                    <a class="plan-card--link" href="#">Escoger este <span class="product-icon arrow-icon"></span></a>
+                </article>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>
