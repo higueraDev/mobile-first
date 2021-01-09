@@ -9,7 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px)">
 </head>
 
 <body>
@@ -33,8 +34,7 @@
                     Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.
                 </p>
             </div>
-            <article class="table-container">
-
+            <article class="card-slider table-container">
                 <div class="table table-primary">
                     <table class="table--content">
                         <p class="table--title table--title__orange">Monedas</p>
@@ -99,30 +99,32 @@
                     Confiable y diseñado para su uso diario.
                 </p>
             </div>
-            <article class="container product-card">
-                <span class="product-icon clock-icon"></span>
-                <h3 class="product-card--title section__white">Tiempo real</h3>
-                <p class="product-card--content section__soft-gray">Nuestro API toma información minuto a minuto sobre las tasas que más
-                    determinan el comportamiento.</p>
-            </article>
-            <article class="container product-card">
-                <span class="product-icon eye-icon"></span>
-                <h3 class="product-card--title section__white">No hay tasas escondidas</h3>
-                <p class="product-card--content section__soft-gray">Ni en la compra o al momento de exit, Batabit siempre te muestra el
-                    costo real de lo que estás adquiriendo.</p>
-            </article>
-            <article class="container product-card">
-                <span class="product-icon dollar-icon"></span>
-                <h3 class="product-card--title section__white">Compara monedas</h3>
-                <p class="product-card--content section__soft-gray">No más rumores, con Babtabit sabrás el valor real de cada moneda en el
-                    mercado actual.</p>
-            </article>
-            <article class="container product-card">
-                <span class="product-icon check-icon"></span>
-                <h3 class="product-card--title section__white">Información confiable</h3>
-                <p class="product-card--content section__soft-gray">Nuestras fuentes están 100% verificadas y continuamos auditando su
-                    contenido mientras se actualizan.</p>
-            </article>
+            <div class="container product-card-container">
+                <article class="container product-card">
+                    <span class="product-icon clock-icon"></span>
+                    <h3 class="product-card--title section__white">Tiempo real</h3>
+                    <p class="product-card--content section__soft-gray">Nuestro API toma información minuto a minuto sobre las tasas que más
+                        determinan el comportamiento.</p>
+                </article>
+                <article class="container product-card">
+                    <span class="product-icon eye-icon"></span>
+                    <h3 class="product-card--title section__white">No hay tasas escondidas</h3>
+                    <p class="product-card--content section__soft-gray">Ni en la compra o al momento de exit, Batabit siempre te muestra el
+                        costo real de lo que estás adquiriendo.</p>
+                </article>
+                <article class="container product-card">
+                    <span class="product-icon dollar-icon"></span>
+                    <h3 class="product-card--title section__white">Compara monedas</h3>
+                    <p class="product-card--content section__soft-gray">No más rumores, con Babtabit sabrás el valor real de cada moneda en el
+                        mercado actual.</p>
+                </article>
+                <article class="container product-card">
+                    <span class="product-icon check-icon"></span>
+                    <h3 class="product-card--title section__white">Información confiable</h3>
+                    <p class="product-card--content section__soft-gray">Nuestras fuentes están 100% verificadas y continuamos auditando su
+                        contenido mientras se actualizan.</p>
+                </article>
+            </div>
 
         </section>
         <section class="banner-container">
@@ -133,7 +135,7 @@
                 <h2 class="section-title section__warm-black">Escoge el plan que mejor se ajuste a ti.</h2>
                 <p class="section-content section__dark-gray">Cualquier plan te da acceso completo a nuestra plataforma.</p>
             </div>
-            <div class="plans-slider">
+            <div class="card-slider">
                 <article class="plan-card">
                     <span class="plan-card--head">Recomendado</span>
                     <p class="plan-card--title">Pago Anual</p>
@@ -171,7 +173,25 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-bg">
+            <div class="container footer-container">
+                <section class="footer-container--item">
+                    <ul class="footer-nav">
+                        <li class="footer-nav--item"><a class="footer-nav--link" href="/">Linkedin</a></li>
+                        <li class="footer-nav--item"><a class="footer-nav--link" href="/">Crunchbase</a></li>
+                        <li class="footer-nav--item"><a class="footer-nav--link" href="/">Hackernews</a></li>
+                    </ul>
+                </section>
+                <section class="footer-container--item">
+                    <a class="footer-slogan--link" href="/">
+                        <img class="footer-slogan--logo" src="/assets/imgs/lay.svg" alt="Lay Icon">
+                        <span class="footer-slogan--text">® Batatabit 2020</span>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

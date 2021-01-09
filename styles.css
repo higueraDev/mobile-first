@@ -160,14 +160,9 @@ main {
 }
 
 .table {
-    width: 70%;
+    width: 100%;
     min-width: 197px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.table-primary {
-    margin-bottom: 20px;
+    margin: 0 8px;
 }
 
 .table--title {
@@ -353,7 +348,7 @@ tr:last-of-type .table--data {
     margin-bottom: 34px;
 }
 
-.plans-slider{
+.card-slider{
     display: flex;
     width: 100%;
     overflow-x: scroll;
@@ -439,4 +434,44 @@ tr:last-of-type .table--data {
 .plan-card--link .product-icon {
     display: inline-block;
     margin: 0 0 0 8px;
+}
+
+.footer-bg{
+    padding: 40px 0;
+    background-color: var(--bitcoin-orange);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer-nav{
+    list-style: none;
+}
+
+.footer-nav--link{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-slogan--logo{
+    display: block;
+    margin: 0 auto 8px;
+}
+
+.footer-slogan--link{
+    text-decoration: none;
+}
+
+.footer-slogan--text{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--white);
 }
